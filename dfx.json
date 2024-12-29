@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "ScholarFundLedger_backend": {
+      "candid": "src/ScholarFundLedger_backend/ScholarFundLedger_backend.did",
+      "package": "ScholarFundLedger_backend",
+      "type": "rust"
+    },
+    "ScholarFundLedger_frontend": {
+      "dependencies": [
+        "ScholarFundLedger_backend"
+      ],
+      "source": [
+        "src/ScholarFundLedger_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ScholarFundLedger_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
